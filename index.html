@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accessibility</title>
+  </head>
+  <body>
+    <form action="#" method="get">      
+      <!-- a label tag is specific to forms
+       that allows us to tell the browser or screen reader what text is labeling which form element.
+       the "for" attribute which has the same value as the ID attribute.
+       the label tag if we switch over to the web browser
+       is that if you actually click on the text it will select the form element-->
+      <label for="first_name">First Name:</label>
+      <input id="first_name" type="text" name="first_name" tabindex="1">
+      
+      <p><strong>Select your favorite colors:</strong></p>
+	  
+	  <!-- use of tabindex: if we hit the tab key we'll go to the first name input first,
+         and then as we tab through we'll go to the other checkboxes -->
+      
+      <input id="red" type="checkbox" name="color" tabindex="2">
+      <label for="red">Red</label>
+      <input id="green" type="checkbox" name="color" tabindex="3">
+      <label for="green">Green</label>
+      <input id="blue" type="checkbox" name="color" tabindex="4">
+      <label for="blue">Blue</label>
+      
+    </form>
+  </body>
+</html>
